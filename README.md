@@ -1,6 +1,6 @@
 # winter19.team6
 
-#Team Members
+## Team Members
 
 - Antigoni Anaxagorou 
 - Sotiris Michailidis
