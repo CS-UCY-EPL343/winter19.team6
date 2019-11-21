@@ -48,8 +48,27 @@ body{
 #cari form{
 	float: left;
 }
+#cari input[type=text]{
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 60%;
+  background: #f1f1f1;
 
 
+}
+#cari input[type=submit]{
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: black;
+  color: yellow;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
 #header_center{
 	width: auto;
 	overflow: auto;
