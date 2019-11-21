@@ -1,0 +1,160 @@
+body{
+	font-family: arial;
+	font-size: 14px;
+  background: url(J4sWBr.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+#wrapper{
+	width: 960px;
+	overflow: auto;
+	margin: 0 auto;
+}
+
+/*---/header/---*/
+#header{
+	width: auto;
+	overflow: auto;
+}
+
+#header_top{
+	width: auto;
+	overflow: auto;
+	margin: 10px 0;
+}
+
+#nonstopsneaks{
+	width: 200px;
+	overflow: auto;
+	float: right;
+	margin: 10px;
+	border-radius: 15px;
+}
+#nonstopsneaks h1{
+	margin: 0;
+	padding: 0;
+	font-size: 45px;
+	font-style: italic;
+	font-weight: 100;
+}
+#cari{
+	width: 480px;
+	overflow:auto;
+	float: left;
+	margin: 30px 10px 10px 10px;
+}
+
+#cari form{
+	float: left;
+}
+
+
+#header_center{
+	width: auto;
+	overflow: auto;
+	margin: 10px 0;
+}
+
+#menu_wrapper{
+	width: auto;		/*-menu wrapper(bar) width auto for the whole line*/
+	overflow: auto;
+	background: black;
+	border-radius: 5px;
+	margin: 0 10px;
+}
+
+#menu{
+	margin: 0;
+	padding: 0;
+
+}
+#menu li{
+	list-style: none;
+	float: left;
+}
+
+#menu li a{
+	padding: 10px;
+	display: block;
+	text-decoration: none;
+	color: yellow;
+}
+
+#menu li a:hover{
+	background: #1f1f21;
+
+}
+#header_bottom{
+	width: auto;
+	overflow: auto;
+	margin: 10px 0;
+}
+
+#slider{
+	width: auto;
+	overflow: auto;
+	margin: 0 8px;
+	border-radius: 5px;
+	border:solid 1px #ededed;
+}
+
+
+/*---/content/---*/
+#content{
+	width: auto;
+	overflow: auto;
+}
+
+#content_top{
+	margin: 10px;
+	text-align: justify;
+	border-bottom: solid 1px #ededed;
+
+}
+
+#content_center{
+	width: auto;
+	overflow: auto;
+	border-bottom: solid 1px #ededed;
+}
+#content_bottom{
+	width: auto;
+	overflow: auto;
+}
+/* Set a style for all buttons */
+button {
+    background-color: #cc3c51;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+/*---/footer/---*/
+#footer{
+	width: auto;
+	overflow: auto;
+	background: #000;
+	color: yellow;
+	text-align: center;
+	margin: 10px 10px 0 10px;
+	border-radius: 5px;
+}
+form{
+	width: 95%;
+	height: 95%;
+	margin: 0 0 0 11px;
+}
+
+h2{
+	margin: 10px 0 10px 11px;
+}
+
+#whole{
+	display: inline-block;
+}
+input.placeholder {
+    text-align: center;
+}
