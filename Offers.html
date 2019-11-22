@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- Author: Avgerinos Sokratous -->
+<html lang="en">
+<head>
+	<meta charset="utf=8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OFFERS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="slideshow.js"></script>
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.mySlides {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+	width: 100%;
+	border: 3px solid #ffbf00;
+	
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+figcaption {
+  display: block;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #ffbf00;
+   background-image: url("add_shopping_cart-24px.svg");
+  
+}
+</style>
+
+</head>
+
+
+
+
+<body>
+	
+	<div id="wrapper">
+	<!---/ini header/-->
+    <div id="header">
+
+      <!---/ini header top/-->
+      <div id="header_top" >
+        <div id="nonstopsneaks">
+          <img src="nonstopsneaks.jpg" width=200px>
+        </div>
+
+        <div id="cari">
+          <form>
+            <input type="text" name="cari" placeholder="Search...">
+            <input type="submit" value="Go">
+          </form>
+        </div>
+      </div>
+	  
+	 <!---/ini header center/-->
+      <div id="header_center" >
+        <div id="menu_wrapper">
+         <ul id="menu">
+		<li class = "menu"><a href="home.html">Home</a></li>
+		<li class = "menu"><a href="Women.html">Women</a></li>
+		<li class = "menu"><a href="Men.html">Men</a></li>
+		<li class = "menu"><a href="Kid.html">Kid</a></li>
+		<li class = "menu"><a href="NewArrivals.html">New Arrivals</a></li>
+		</ul>
+        </div>
+      </div>
+	  
+	  <p>
+	  <!-- The slideshow -->
+	  <div class="row" >
+		 <div class= "column" >
+		  <figure>
+		  <img class="mySlides" src= "Img/offers/offer01.jpg" alt="Work" align="left-side" />
+			<figcaption><h3> <font color =#57b6cc> Pink Nikes &#8364;49.99</font><h3/> </figcaption>
+			<button class="btn" onclick="location.href='shopping_cart.html'"> ORDER IT NOW </button>	
+		</figure>
+		</div>
+		<div class= "column" >
+		  <figure>
+		  <img class="mySlides" src= "Img/offers/offer02.jpg" alt="Work" align="left-side" />
+		<figcaption><h4> <font color =#57b6cc> Purple Nikes &#8364;49.99</font><h4/> </figcaption>	
+		<button class="btn" onclick="location.href='shopping_cart.html'"> ORDER IT NOW </button>
+		</figure>
+		</div>
+		<div class= "column" >
+		  <figure>
+		  <img class="mySlides" src= "Img/offers/offer03.jpg" alt="Work" align="left-side" />
+		<figcaption><h4> <font color =#57b6cc> Sneakers &#8364;39.99</font><h4/> </figcaption>	
+		<button class="btn" onclick="location.href='shopping_cart.html'"> ORDER IT NOW </button>
+		</figure>
+		</div>
+		<div class= "column" >
+		  <figure>
+		  <img class="mySlides" src= "Img/offers/offer04.jpg" alt="Work" align="left-side" />
+		<figcaption><h4> <font color =#57b6cc> Nike Spikes &#8364;59.99</font><h4/> </figcaption>	
+		<button class="btn" onclick="location.href='shopping_cart.html'"> ORDER IT NOW </button>
+		</figure>
+		<div class= "column" >
+		  <figure>
+		  <img class="mySlides" src= "Img/offers/offer05.jpg" alt="Work" align="left-side" />
+		<figcaption><h4> <font color =#57b6cc> Nike Stripes &#8364;34.99</font><h4/> </figcaption>	
+		<button class="btn" onclick="location.href='shopping_cart.html'"> ORDER IT NOW </button>
+		</figure>
+		</div>
+		
+	  </div>
+	  
+	  
+	   <!---/ini footer/-->
+    <div id="footer">
+    	<p>
+    		<font color =#57b6cc >Copyright</font> &copy;2019
+    		University of Cyprus
+    	</p>
+    </div>
+	  
+	</div>
+	 
+</body>
+</html>
