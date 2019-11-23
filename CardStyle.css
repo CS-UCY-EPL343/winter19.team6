@@ -13,6 +13,11 @@ body{
     background:url(J4sWBr.jpg),no-repeat center center fixed;
     
 }
+.titleH{
+    font-weight: bold;
+    font-size:15px;
+    color:black;
+}
 
 #cartId{
     position:relative;
@@ -24,6 +29,15 @@ body{
     padding-right:50px;
     background:white;
     border-radius:15px;
+}
+
+.Details{
+    border-top:1px solid lightgrey;
+    color:grey;
+}
+.PersonalDetails{
+    font-size:15px;
+    
 }
 
 #Logo{
