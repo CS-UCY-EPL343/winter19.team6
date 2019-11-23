@@ -16,13 +16,14 @@ body{
 
 #cartId{
     position:relative;
-    left:25%;
-    margin-top:10%;
-    width:50%;
+    margin-top:5%;
+    width:70%;
     height:50%;
     border-style:solid;
     padding:10px;
+    padding-right:50px;
     background:white;
+    border-radius:15px;
 }
 
 #Logo{
@@ -33,7 +34,7 @@ body{
 }
 
 #Logo2{
-        width:150px;
+        width:200px;
         overflow:auto;
         float:right;
         border-radius:15px;
