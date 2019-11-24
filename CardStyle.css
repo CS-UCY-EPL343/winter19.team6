@@ -10,7 +10,7 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
   width: 20%;
 }
 body{
-    background:url(J4sWBr.jpg),no-repeat center center fixed;
+    background:url(Img/home/J4sWBr.jpg),no-repeat center center fixed;
     
 }
 .titleH{
