@@ -50,9 +50,14 @@
 			z.style.left = "0";
 		}
 		function check(login){
-				if(login.userid.value=="mchara40@cs.ucy.ac.cy" && login.pswrd.value== "123456"){
-					window.open("home.html")
+				if(login.userid.value=="admin" && login.pswrd.value== "admin"){
+					window.open("homeAdmin.html")
 				}
+                
+                if(login.userid.value=="client" && login.pswrd.value== "client"){
+                        window.open("home.html")
+                    
+                    }
 				else{
 					alert("the username and the password you entered don't match.Try again")
 				    }

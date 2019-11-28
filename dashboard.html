@@ -102,7 +102,8 @@
  <div class="top">
   <label for="photo"> Photo</label>
 	<br>
-    <input type="file" name="photo" placeholder="Add product photo"/>
+  <input type='file' onchange="readURL(this);" />
+    <img id="blah" src="#" alt="your image" />
 </div>
   
 </form>
@@ -126,7 +127,25 @@
     </div>
 </div>
 
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
 
+<script>
+function readURL(input) {
+          if (input.files && input.files[0]) {
+              var reader = new FileReader();
+
+              reader.onload = function (e) {
+                  $('#blah')
+                      .attr('src', e.target.result)
+                      .width(100)
+                      .height(100);
+              };
+
+              reader.readAsDataURL(input.files[0]);
+          }
+      }
+</script>
 
 <script>
 // Get the modal
@@ -163,8 +182,8 @@ var productName =  document.getElementById("product-name").value;
 var productPrice =  document.getElementById("product-price").value;
 var productSizes = document.getElementById("product-sizes").value;
 var productDescription =  document.getElementById("product-description").value;
-var image = document.createElement('img');
-image.src = "Img/kid/kidsshoes1.jpg";
+var image = document.createElement('img')
+image.src=document.querySelector('#blah').src;;
 image.style.height="100px";
 image.style.width="100px";
 var table = document.getElementById("tbody");
