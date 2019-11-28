@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--Author: Soteris Michaelides-->
+<html>
+    <head>
+        <link rel="stylesheet" href="CardStyle.css">
+    </head>
+    <body>
+    <img id="Logo2" src="Img/home/nonstopsneaks.jpg">
+      <!--      <img id="Logo2" src="nonstopsneaks.jpg"> -->
+        <div id= "cartId">
+            <h1>Shopping Cart</h1>
+            
+            <div class="shopping-cart">
+                
+                <div class="column-labels">
+                    <label class="product-image">Image</label>
+                    <label class="product-details">Product</label>
+                    <label class="product-price">Price</label>
+                    <label class="product-quantity">Quantity</label>
+                    <label class="product-removal">Remove</label>
+                    <label class="product-line-price">Total</label>
+                </div>
+                
+                <div class="product">
+                    <div class="product-image">
+                        <img src="shoe1.jpg">
+                            </div>
+                    <div class="product-details">
+                        <div class="product-title">Model: Super 143D&C</div>
+                        <p class="product-description"> Brand : Dolce & Cabbana<br> Category:Women <br>Type : Casual<br>Size: 43 <br> </p>
+                    </div>
+                    <div class="product-price">199.99</div>
+                    <div class="product-quantity">
+                        <input type="number" value="1" min="1">
+                            </div>
+                    <div class="product-removal">
+                        <button class="remove-product">
+                            Remove
+                        </button>
+                    </div>
+                    <div class="product-line-price">199.99</div>
+                </div>
+                
+                <div class="product">
+                    <div class="product-image">
+                        <img src="shoe2.jpg">
+                            </div>
+                    <div class="product-details">
+                        <div class="product-title">Air Jordan 23 </div>
+                        <p class="product-description"> Brand : Nike<br> Category:Women <br>Type : athletic<br>Size: 38 <br></p>
+                    </div>
+                    <div class="product-price">89.99</div>
+                    <div class="product-quantity">
+                        <input type="number" value="1" min="1">
+                            </div>
+                    <div class="product-removal">
+                        <button class="remove-product">
+                            Remove
+                        </button>
+                    </div>
+                    <div class="product-line-price">89.99</div>
+                </div>
+                
+                <div class="totals">
+                    <div class="totals-item">
+                        <label>Subtotal</label>
+                        <div class="totals-value" id="cart-subtotal">299.98</div>
+                    </div>
+                    <div class="totals-item">
+                        <label>Tax Inc. (23%)</label>
+                        <div class="totals-value" id="cart-tax">68.99</div>
+                    </div>
+                    <div class="totals-item">
+                        <label>Shipping</label>
+                        <div class="totals-value" id="cart-shipping">15.00</div>
+                    </div>
+                    <div class="totals-item totals-item-total">
+                        <label>Grand Total</label>
+                        <div class="totals-value" id="cart-total">304.98</div>
+                    </div>
+                </div>
+                
+                <button onclick="myFunction()" class="checkout" >Complete Order</button>
+                
+            </div>
+        </div>
+    </body>
+    
+    <script>
+    function myFunction() {
+      location.replace("Confirmation.html")
+    }
+    </script>
+    <script type="text/javascript" src="external.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    
+</html>

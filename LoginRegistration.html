@@ -1,0 +1,63 @@
+<!--Author: Marios Charalambous-->
+
+<html>
+<head>
+	<title>Login And Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+	<div id="nonstopsneaks">
+          <img src="Img/home/nonstopsneaks.jpg" width=200px>
+        </div>
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+			
+		<form id="login" class="input-group">
+			<input type="text" name="userid" class="input-field" placeholder="Enter UserName" required>
+			<input type="password" name="pswrd" class="input-field" placeholder="Enter Password" required>
+			<input type="checkbox" class="chech-box"><span>Remember Password</span>
+			<button type="submit" onclick="check(this.form)" class="submit-btn" value="Login" >Log in</button>
+		</form>
+		<form id="register" class="input-group">
+			<input type="text" class="input-field" placeholder="Enter UserName" required>
+			<input type="email" class="input-field" placeholder="Email ID" required>
+			<input type="password" class="input-field" placeholder="Enter Password" required>
+			<input type="text" class="input-field" placeholder="Enter your address" required>
+			<input type="text" class="input-field" placeholder="Enter your zipcode" required>
+			<input type="checkbox" class="chech-box"><span>I'm not a robot</span>
+			<button type="submit" class="submit-btn">Register</button>
+		</form>
+		</div>
+	</div>
+	<script language="javascript">
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("btn");
+
+		function register(){
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px";
+		}
+		function login(){
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0";
+		}
+		function check(login){
+				if(login.userid.value=="mchara40@cs.ucy.ac.cy" && login.pswrd.value== "123456"){
+					window.open("home.html")
+				}
+				else{
+					alert("the username and the password you entered don't match.Try again")
+				    }
+			
+			}
+	</script>
+</body>
+</html>
